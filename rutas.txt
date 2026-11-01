@@ -1,3 +1,6 @@
 /
 /admin
 /backup
+/.env
+/phpmyadmin
+/reservas.sql
