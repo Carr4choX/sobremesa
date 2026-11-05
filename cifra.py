@@ -1,7 +1,8 @@
+import base64
 import sys
 
-ROT_MAY = 3
-ROT_MIN = 7
+ROT_MAY = 5
+ROT_MIN = 11
 
 
 def mover(texto):
@@ -16,7 +17,9 @@ def mover(texto):
     return "".join(salida)
 
 
-def cifrar(frase):
+def cifrar(secreto):
+    b64 = base64.b64encode(secreto.encode()).decode()
+    frase = f"El carracho no tiene mesa en Carballesa: {b64} :]"
     return mover(frase)[::-1]
 
 
