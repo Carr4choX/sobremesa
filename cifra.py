@@ -1,8 +1,9 @@
 import base64
+import os
 import sys
 
-ROT_MAY = 5
-ROT_MIN = 11
+ROT_MAY = int(os.environ["ROT_MAY"])
+ROT_MIN = int(os.environ["ROT_MIN"])
 
 
 def mover(texto):
